@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;  /* Располагаем элементы вертикально */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    gap: 20px;  /* Добавляем отступ между элементами */
+}
+
+/* Остальные стили остаются без изменений */
+
+#clickButton {
+    padding: 22px 45px;
+    font-size: 18px;
+    background-color: #383838; /* Синий цвет */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.5s;
+}
+
+#clickButton:hover {
+    background-color: #4f4f4f;
+    transform: scale(1.1); /* Увеличение кнопки при наведении */
+}
+
+#upgButton {
+    padding: 22px 45px;
+    font-size: 18px;
+    background-color: #383838; /* Синий цвет */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.5s;
+}
+
+#upgButton:hover {
+    background-color: #4f4f4f;
+    transform: scale(1.1); /* Увеличение кнопки при наведении */
+}
+
+#xDiv {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}

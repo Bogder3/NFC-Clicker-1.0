@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC Clicker 1.0</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="manifest" href="manifest.json">
+    <script>
+    // Регистрация сервис-воркера
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/js/service-worker.js')
+        .then(() => console.log('Service Worker зарегистрирован!'))
+        .catch(err => console.log('Ошибка:', err));
+    }
+    </script>
+</head>
+<body>
+    <div id="xDiv">X: 0</div>
+    <button id="clickButton">Clicks: -1</button>
+    <button id="upgButton">Upg Price: All clicks</button>
+
+    <script src="js/clicker.js"></script>
+</body>
+</html>
