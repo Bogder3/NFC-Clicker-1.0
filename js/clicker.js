@@ -1,6 +1,18 @@
 // Ждем, пока загрузится вся страница
 document.addEventListener('DOMContentLoaded', function() {
     // При загрузке
+    // После загрузки страницы
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        const installButton = document.createElement('button');
+        installButton.textContent = 'Установить приложение';
+        document.body.appendChild(installButton);
+  
+        installButton.addEventListener('click', () => {
+            e.prompt();
+        });
+    });
+    
     let clicks = Number(localStorage.getItem('clicks')) || 0;
     let x = Number(localStorage.getItem('x')) || 1;
     let upg = Number(localStorage.getItem('upg')) || 10;
