@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('clicks', clicks);
         localStorage.setItem('x', x);
         localStorage.setItem('upg', upg);
-
-
     }
 
     // Функция для получения параметров из URL
