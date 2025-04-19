@@ -25,6 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     });
 
+    resetButton.addEventListener('click', () => {
+        localStorage.clear(); // Удаляет ВСЕ данные из localStorage
+        clicks = 0;
+        x = 1;
+        upg = 10;
+        update();
+        console.log('(id="resetButton") Reseted!');
+    });
+
     function update() {
         clicks = Number(clicks)
         x = Number(x)
