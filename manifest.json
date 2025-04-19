@@ -1,7 +1,7 @@
 {
   "name": "NFC Clicker 1.0",
   "short_name": "NFC Clicker 1.0",
-  "start_url": "/NFC-Clicker-1.0/", // Важно: путь к вашему сайту
+  "start_url": "/NFC-Clicker-1.0/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#383838",
