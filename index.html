@@ -12,8 +12,8 @@
     // Регистрация сервис-воркера
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/NFC-Clicker-1.0/service-worker.js')
-        .then(() => console.log('(id="index.html") Service Worker Registered!'))
-        .catch(err => console.log('(id="index.html") Error:', err));
+        .then(() => console.log('(id="index.html") Service Worker Registered!')) debugLog('неЗагружено!');
+        .catch(err => console.log('(id="index.html") Error:', err)) debugLog('Загружено!');
     }
     </script>
 </head>
@@ -23,10 +23,17 @@
     <button id="upgButton">Upg Price: All clicks</button>
     <button id="resetButton">Reset All</button>
     <button id="installButton">Install App</button>
+
+    <div id="debug" style="position: fixed; top: 0; background: white; z-index: 9999;"></div>
+    <script>
+        function debugLog(text) {
+            document.getElementById('debug').textContent += text + '\n';
+        }
+    </script>
     
     <script src="js/clicker.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-    <script>eruda.init();</script>
+        <script>eruda.init();</script>
 </body>
 </html>
