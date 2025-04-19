@@ -1,9 +1,9 @@
 // Ждем, пока загрузится вся страница
 document.addEventListener('DOMContentLoaded', function() {
     // При загрузке
-    let clicks = localStorage.getItem('clicks') || 0;
-    let x = localStorage.getItem('x') || 1;
-    let upg = localStorage.getItem('upg') || 10;
+    let clicks = Number(localStorage.getItem('clicks')) || 0;
+    let x = Number(localStorage.getItem('x')) || 1;
+    let upg = Number(localStorage.getItem('upg')) || 10;
 
     update();
 
@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function update() {
+        clicks = Number(clicks)
+        x = Number(x)
+        upg = Number(upg)
+        
         document.getElementById('clickButton').textContent = "Clicks: "+clicks;
         document.getElementById('upgButton').textContent = "Upg Price: "+upg;
         document.getElementById('xDiv').textContent = "X: "+x;
