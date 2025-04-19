@@ -1,13 +1,13 @@
-const CACHE_NAME = 'nfc clicker 1.0';
+const CACHE_NAME = 'clicker-v1'; // Измените версию при обновлениях
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/css/styles.css',
-  '/js/game.js',
-  '/icons/NFC Clicker 1.0 (192x192).png',
-  '/icons/NFC Clicker 1.0 (512x512).png'
+  '/NFC-Clicker-1.0/', // Главная страница
+  '/NFC-Clicker-1.0/index.html',
+  '/NFC-Clicker-1.0/css/style.css',
+  '/NFC-Clicker-1.0/js/clicker.js',
+  '/NFC-Clicker-1.0/icons/NFC Clicker 1.0 (192x192).png',
+  '/NFC-Clicker-1.0/icons/NFC Clicker 1.0 (512x512).png',
+  '/NFC-Clicker-1.0/manifest.json'
 ];
-
 // Установка и кэширование ресурсов
 self.addEventListener('install', event => {
   event.waitUntil(
