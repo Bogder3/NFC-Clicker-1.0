@@ -11,7 +11,7 @@
     <script>
     // Регистрация сервис-воркера
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/NFC-Clicker-1.0/service-worker.js')
+        navigator.serviceWorker.register('/service-worker.js')
         .then(() => console.log('(id="index.html") Service Worker Registered!')) debugLog('неЗагружено!');
         .catch(err => console.log('(id="index.html") Error:', err)) debugLog('Загружено!');
     }
