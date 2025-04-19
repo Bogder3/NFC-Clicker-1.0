@@ -7,14 +7,11 @@
     
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <script>
-    // Регистрация сервис-воркера
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js')
-        .then(() => console.log('(id="index.html") Service Worker Registered!')) debugLog('неЗагружено!');
-        .catch(err => console.log('(id="index.html") Error:', err)) debugLog('Загружено!');
-    }
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+        }
     </script>
 </head>
 <body>
