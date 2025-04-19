@@ -1,7 +1,7 @@
 {
   "name": "NFC Clicker",
   "short_name": "Clicker",
-  "start_url": "/",
+  "start_url": "/NFC-Clicker-1.0/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#383838",
