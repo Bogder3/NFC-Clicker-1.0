@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('beforeinstallprompt', (e) => {
         e.preventDefault();
         const installButton = document.createElement('button');
-        installButton.textContent = 'Установить приложение';
+        installButton.textContent = 'Install App';
         document.body.appendChild(installButton);
   
         installButton.addEventListener('click', () => {
