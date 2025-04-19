@@ -1,4 +1,4 @@
-const CACHE_NAME = 'clicker-v1'; // Измените версию при обновлениях
+const CACHE_NAME = 'clicker-v3'; // Измените версию при обновлениях
 const ASSETS = [
   '/NFC-Clicker-1.0/', // Главная страница
   '/NFC-Clicker-1.0/index.html',
