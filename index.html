@@ -10,7 +10,10 @@
     <link rel="manifest" href="/manifest.json">
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
+        // Добавьте название репозитория в путь!
+            navigator.serviceWorker.register('/NFC-Clicker-1.0/service-worker.js')
+                .then(() => console.log('Service Worker зарегистрирован!'))
+                .catch(err => console.log('Ошибка:', err));
         }
     </script>
 </head>
