@@ -1,8 +1,9 @@
 // Ждем, пока загрузится вся страница
 document.addEventListener('DOMContentLoaded', function() {
-    clicks = 0;
-    x = 1;
-    upg = 10;
+    // При загрузке
+    let clicks = localStorage.getItem('clicks') || 0;
+    let x = localStorage.getItem('x') || 1;
+    let upg = localStorage.getItem('upg') || 10;
 
     update();
 
@@ -28,6 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('clickButton').textContent = "Clicks: "+clicks;
         document.getElementById('upgButton').textContent = "Upg Price: "+upg;
         document.getElementById('xDiv').textContent = "X: "+x;
+
+        localStorage.setItem('clicks', clicks);
+        localStorage.setItem('x', x);
+        localStorage.setItem('upg', upg);
+
+
     }
 
     // Функция для получения параметров из URL
