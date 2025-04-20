@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 navigator.serviceWorker.getRegistrations().then(registrations => {
                     registrations.forEach(registration => registration.unregister());
                 });
-            }
+            };
 
             // 3. Принудительная перезагрузка страницы
             window.location.reload(true);
-        }
+        };
     });
 
     // Функции
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('clicks', clicks);
         localStorage.setItem('x', x);
         localStorage.setItem('upg', upg);
-    }
+    };
 
     // Бонусная система
     const urlParams = new URLSearchParams(window.location.search);
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case '1k': clicks += 1000; break;
             case '1m': clicks += 1000000; break;
             default: console.log('Unknown bonus type');
-        }
+        };
         update();
-    }
+    };
 });
