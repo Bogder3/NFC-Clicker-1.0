@@ -36,9 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             registrations.forEach(registration => registration.unregister());
             });
         }
-  
         // Перезагружаем страницу (чтобы сбросить все переменные)
-        window.location.reload(true);
         clicks = Number(0);
         x = Number(1);
         upg = Number(10);
