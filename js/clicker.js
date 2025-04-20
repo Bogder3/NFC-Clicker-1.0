@@ -26,7 +26,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     resetButton.addEventListener('click', () => {
-        localStorage.clear(); // Удаляет ВСЕ данные из localStorage
+        document.getElementById('resetButton').addEventListener('click', () => {
+            // Очищаем сохранения
+            localStorage.clear();
+  
+            // Очищаем кэш сервис-воркера (если PWA установлено)
+            if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(registrations => {
+            registrations.forEach(registration => registration.unregister());
+            });
+        }
+  
+        // Перезагружаем страницу (чтобы сбросить все переменные)
+        window.location.reload(true);
         clicks = 0;
         x = 1;
         upg = 10;
