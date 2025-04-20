@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Функции
     function update() {
         // Обновляем интерфейс
-        clickButton.textContent = Clicks: ${clicks};
-        upgButton.textContent = Upg Price: ${upg};
-        xDiv.textContent = X: ${x};
+        clickButton.textContent = 'Clicks: '+clicks;
+        upgButton.textContent = 'Upg Price: '+upg;
+        xDiv.textContent = 'X: '+x;
 
         // Сохраняем данные
         localStorage.setItem('clicks', clicks);
