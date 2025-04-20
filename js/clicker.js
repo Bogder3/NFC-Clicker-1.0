@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
         // Перезагружаем страницу (чтобы сбросить все переменные)
         window.location.reload(true);
-        clicks = 0;
-        x = 1;
-        upg = 10;
+        clicks = Number(0);
+        x = Number(1);
+        upg = Number(10);
         update();
         console.log('(id="resetButton") Reseted!');
     });
