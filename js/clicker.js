@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     resetButton.addEventListener('click', () => {
-        if (confirm("Вы уверены? Весь прогресс будет потерян!")) {
+        if (confirm("Are you sure? All progress will be lost!")) {
             // 1. Очищаем хранилище
             localStorage.clear();
 
