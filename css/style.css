@@ -43,7 +43,7 @@ body {
     transform: scale(1.1); /* Увеличение кнопки при наведении */
 }
 
-#installButton {
+#resetButton {
     padding: 22px 45px;
     font-size: 18px;
     background-color: #383838; /* Синий цвет */
@@ -54,7 +54,7 @@ body {
     transition: transform 0.3s, background-color 0.5s;
 }
 
-#installButton:hover {
+#resetButton:hover {
     background-color: #4f4f4f;
     transform: scale(1.1); /* Увеличение кнопки при наведении */
 }
